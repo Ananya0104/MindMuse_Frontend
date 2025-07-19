@@ -11,7 +11,6 @@ import React, {
 import { v4 as uuidv4 } from "uuid";
 import { Message } from "@/interfaces/chat";
 import { API_BASE_URL } from "../lib/api";
-import { API_ENDPOINTS, HTTP_METHODS } from "../constants/api";
 
 interface ChatSessionContextType {
   messages: Message[];
