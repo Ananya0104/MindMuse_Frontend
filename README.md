@@ -127,10 +127,3 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ---
 
-## 💬 Contributing
-Pull requests and issues are welcome! Please open an issue to discuss your idea or bug before submitting a PR.
-
----
-
-## 📫 Contact
-For questions, feedback, or support, please contact the project maintainer at [your-email@example.com].
