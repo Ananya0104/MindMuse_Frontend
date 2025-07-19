@@ -10,6 +10,8 @@ import React, {
 } from "react";
 import { v4 as uuidv4 } from "uuid";
 import { Message } from "@/interfaces/chat";
+import { API_BASE_URL } from "../lib/api";
+import { API_ENDPOINTS, HTTP_METHODS } from "../constants/api";
 
 interface ChatSessionContextType {
   messages: Message[];
@@ -40,7 +42,7 @@ export const ChatSessionProvider = ({ children }: { children: ReactNode }) => {
     };
     setMessages((prev) => [...prev, userMsg]);
     try {
-      const res = await fetch("http://localhost:8080/api/chat", {
+      const res = await fetch(`${API_BASE_URL}/api/chat`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId, sessionId, message: prompt.trim() }),

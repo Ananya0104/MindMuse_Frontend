@@ -14,8 +14,7 @@ export const API_ENDPOINTS = {
     GET_ALL: "/api/journals",
     GET_BY_ID: (id: string | number) => `/api/journals/${id}`,
     UPDATE: (id: string | number) => `/api/journals/${id}`,
-    DELETE: (id: string | number) => `/api/journals/${id}`,
-    TEST: "/api/journals/test", // Your debug route
+    DELETE: (id: string | number) => `/api/journals/${id}`
   },
   EMERGENCY_CONTACTS: {
     BASE: "/api/emergency",
